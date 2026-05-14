@@ -9,7 +9,7 @@ const DIFFICULTY_CONFIG: Record<Difficulty, { rows: number; cols: number }> = {
   Hard: { rows: 20, cols: 25 },
 };
 
-export function game() {
+export function useGameEngine() {
   const [difficulty, setDifficulty] = useState<Difficulty>('Easy');
   const [gameState, setGameState] = useState<GameState>('IDLE');
   const [grid, setGrid] = useState<Cell[][]>([]);
